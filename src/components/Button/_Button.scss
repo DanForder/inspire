@@ -2,23 +2,24 @@
 
 .button {
   width: 100%;
-
   font-size: $regular-font-size;
+
   border: none;
   border-radius: 0.4rem;
 
-  background-image: linear-gradient(180deg, #e1a0a0, #e58181);
-  box-shadow: 0 10px 40px #6b3838;
+  background-image: linear-gradient(180deg, #eeecec, #ffffff);
+  box-shadow: 0 10px 30px #47484d;
   padding: 0.75rem 2.5rem;
   cursor: pointer;
 
   &:hover {
-    background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
+    background-image: linear-gradient(180deg, #cfcde0, #ffffff);
   }
 }
 
 @media (min-width: $tablet-breakpoint) {
   .button {
+    font-size: $large-font-size;
     width: initial;
   }
 }

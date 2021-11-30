@@ -7,20 +7,12 @@
   justify-content: center;
 
   gap: 2rem;
-  font-size: 1.5rem;
+  font-size: $regular-font-size;
   padding: 2rem 1rem;
   width: 100%;
   max-width: 50rem;
   flex: 1;
-  margin: 4rem;
 
-  //   &.quote__content {
-  //   }
-
-  //   &.quote__author {
-  //   }
-
-  //overlay
   &:after {
     content: "";
     position: absolute;
@@ -29,5 +21,25 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .quote {
+    margin: 6rem;
+
+    & .quote__content,
+    & .quote__author {
+      font-size: $large-font-size;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .quote {
+    & .quote__content,
+    & .quote__author {
+      font-size: $largest-font-size;
+    }
   }
 }

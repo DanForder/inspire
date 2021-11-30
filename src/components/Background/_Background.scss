@@ -1,19 +1,21 @@
 @use "../../styles/variables.scss" as *;
 
 .background {
-  animation: animate-color 15s alternate infinite;
-  padding: 2rem;
+  animation: animate-color 120s alternate infinite;
   height: 100vh;
+  padding: 2rem;
 
   .background__content {
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    text-align: center;
   }
 }
+
 @media (min-width: $tablet-breakpoint) {
   .background {
     padding: 4rem 2rem;
@@ -22,22 +24,46 @@
 
 @keyframes animate-color {
   0% {
+    background-color: rgba(133, 131, 243, 0.774);
+  }
+
+  10% {
+    background-color: rgba(131, 243, 146, 0.774);
+  }
+
+  20% {
+    background-color: rgba(243, 144, 131, 0.774);
+  }
+
+  30% {
     background-color: rgba(241, 243, 131, 0.774);
   }
 
-  25% {
-    background-color: rgba(243, 144, 131, 0.774);
+  40% {
+    background-color: rgba(243, 131, 168, 0.774);
   }
 
   50% {
     background-color: rgba(131, 243, 243, 0.774);
   }
 
-  75% {
+  60% {
+    background-color: rgba(131, 161, 243, 0.774);
+  }
+
+  70% {
     background-color: rgba(166, 243, 131, 0.774);
   }
 
+  80% {
+    background-color: rgba(243, 198, 131, 0.774);
+  }
+
+  90% {
+    background-color: rgba(243, 131, 131, 0.774);
+  }
+
   100% {
-    background-color: rgba(161, 131, 243, 0.774);
+    background-color: rgba(189, 131, 243, 0.774);
   }
 }

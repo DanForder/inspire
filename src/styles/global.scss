@@ -3,3 +3,15 @@
 * {
   color: $text-color-primary;
 }
+
+@media (min-width: $tablet-breakpoint) {
+  h1 {
+    font-size: $large-font-size;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  h1 {
+    font-size: $largest-font-size;
+  }
+}
