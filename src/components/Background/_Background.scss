@@ -1,0 +1,43 @@
+@use "../../styles/variables.scss" as *;
+
+.background {
+  animation: animate-color 15s alternate infinite;
+  padding: 2rem;
+  height: 100vh;
+
+  .background__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: $tablet-breakpoint) {
+  .background {
+    padding: 4rem 2rem;
+  }
+}
+
+@keyframes animate-color {
+  0% {
+    background-color: rgba(241, 243, 131, 0.774);
+  }
+
+  25% {
+    background-color: rgba(243, 144, 131, 0.774);
+  }
+
+  50% {
+    background-color: rgba(131, 243, 243, 0.774);
+  }
+
+  75% {
+    background-color: rgba(166, 243, 131, 0.774);
+  }
+
+  100% {
+    background-color: rgba(161, 131, 243, 0.774);
+  }
+}

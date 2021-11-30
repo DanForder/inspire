@@ -1,0 +1,33 @@
+@use "../../styles/variables.scss" as *;
+
+.quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+  font-size: 1.5rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 50rem;
+  flex: 1;
+  margin: 4rem;
+
+  //   &.quote__content {
+  //   }
+
+  //   &.quote__author {
+  //   }
+
+  //overlay
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}

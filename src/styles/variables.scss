@@ -1,0 +1,22 @@
+//colors
+$background-color: #ffffff;
+$foreground-color: #e9e5d8;
+$text-color-primary: #2b2a33;
+$text-color-secondary: #6c6a7c;
+$highlight-color: #e58181;
+
+// buttons
+$gradient-color: linear-gradient(180deg, #e1a0a0 0%, #e68181 100%);
+$gradient-hover: linear-gradient(180deg, #e2c1c1 0%, #d36b6b 100%);
+
+//font sizes
+$largest-font-size: 3rem;
+$large-font-size: 2rem;
+$regular-font-size: 1rem;
+
+// breakpoints
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+$large-desktop-breakpoint: 1440px;
+$extra-large-desktop-breakpoint: 2560px;
