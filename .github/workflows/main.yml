@@ -1,0 +1,11 @@
+name: Deploy GitHub Pages on push to main
+"on":
+  push:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm build && npm deploy
