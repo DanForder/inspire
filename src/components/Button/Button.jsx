@@ -1,7 +1,11 @@
 import "./_Button.scss";
 
-const Button = ({ label }) => {
-  return <button className="button">{label}</button>;
+const Button = ({ label, onClick }) => {
+  return (
+    <button className="button" onClick={onClick}>
+      {label}
+    </button>
+  );
 };
 
 export default Button;
