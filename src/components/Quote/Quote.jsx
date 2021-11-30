@@ -3,13 +3,13 @@ import "./_Quote.scss";
 
 const Quote = ({ text, author }) => {
   const currentQuote = useMemo(() => {
-    return text && author ? (
+    return text ? (
       <>
         <q className="quote__content">{text}</q>
         <footer className="quote__author">{author ?? "Anonymous"}</footer>
       </>
     ) : (
-      <p>Are you ready to be inspired?</p>
+      <p className="quote__content">Are you ready to be inspired?</p>
     );
   }, [author, text]);
 
